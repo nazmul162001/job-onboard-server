@@ -11,7 +11,7 @@ const {
   handleUpdateStatus,
   deleteApplicantsData
 } = require("../Controllers/applicants.controller");
-// all route 
+// all route included here
 router.get("/", getApplicants);
 router.get("/all/:candidatesID", VerifyToken, singleCandidates);
 router.get("/applied", VerifyToken, getOnlyApplicant);
